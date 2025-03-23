@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#292929"
+    android:padding="20dp">
+
+    <!-- Logo e Imagen -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Nombre de la App -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tuabogado"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Texto de Pregunta -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál es tu duda?"
+        android:textColor="#C0B283"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Input de Usuario -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:hint="Escribe aquí..."
+        android:padding="10dp"
+        android:textColorHint="#C0B283"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Enlace a Consultas Recientes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultas recientes"
+        android:textColor="#C0B283"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Nota Legal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No utilices esta aplicación como tu principal fuente de información jurídica..."
+        android:textColor="#C0B283"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

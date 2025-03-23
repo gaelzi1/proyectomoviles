@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tus consultas</string>
+    <string name="logo_description">Logo</string>
+    <string name="search_hint">Nueva consulta</string>
+    <string name="search_icon">Ícono de búsqueda</string>
+    <string name="user_icon">Ícono de usuario</string>
+    <string name="this_week">Esta semana</string>
+    <string name="this_month">Este mes</string>
+    <string name="last_month">El mes pasado</string>
+    <string name="violation_speed">Exceso de velocidad</string>
+    <string name="violation_light">Luz trasera</string>
+    <string name="date_time">13/10/2022 03:43 p.m.</string>
+</resources>
