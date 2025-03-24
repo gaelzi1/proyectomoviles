@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:text="Registrar"
             android:textColor="@android:color/black"
-            android:background="#D4CBA6"
+            android:backgroundTint="@color/dorado"
             android:padding="14dp"
             android:layout_marginBottom="12dp"/>
 
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:text="Ya tengo sesion"
             android:textColor="@android:color/black"
-            android:background="#D4CBA6"
+            android:backgroundTint="@color/dorado"
             android:padding="14dp"/>
         <TextView
             android:id="@+id/tvTerms"
