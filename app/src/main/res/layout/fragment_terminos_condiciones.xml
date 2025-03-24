@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_terms_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Términos y Condiciones de Uso de TuAbogado\n\nÚltima actualización: [12/03/2025]\n\nBienvenido/a a TuAbogado (en adelante, 'la Aplicación'). Al utilizar la Aplicación, usted acepta los siguientes términos y condiciones. Por favor, léalos detenidamente antes de usar la Aplicación. Si no está de acuerdo con alguno de estos términos, no debe utilizar la Aplicación.\n\n1. Aceptación de los Términos\nAl acceder y utilizar la Aplicación, usted acepta estar legalmente obligado por estos Términos y Condiciones. Estos términos rigen su uso de la Aplicación y cualquier servicio proporcionado a través de ella.\n\n2. Descripción del Servicio\nPONOS es una aplicación que utiliza inteligencia artificial (IA) para asistir a los conductores en ciudades, ayudándoles a reconocer y cumplir con las reglas de tránsito según las exigencias de los oficiales de tránsito. La Aplicación tiene como objetivo promover el cumplimiento de las normas de tránsito y contribuir a la reducción de prácticas corruptas.\n\n3. Uso Responsable\nUsted acepta utilizar PONOS de manera responsable y conforme a las leyes y regulaciones de tránsito aplicables en su jurisdicción. La Aplicación está diseñada para promover el cumplimiento de las normas y evitar prácticas corruptas. Cualquier uso de la Aplicación para fines ilegales o no éticos está estrictamente prohibido.\n\n4. Privacidad y Protección de Datos\nLa Aplicación recopila y procesa datos personales de acuerdo con nuestra Política de Privacidad. Esto incluye, pero no se limita a, datos de ubicación, información del vehículo y patrones de conducción. Al utilizar PONOS, usted consiente la recopilación y el uso de sus datos personales según lo descrito en nuestra Política de Privacidad.\n\n5. Limitación de Responsabilidad\nPONOS no se hace responsable de ningún daño directo, indirecto, incidental, especial o consecuente que resulte del uso o la imposibilidad de uso de la Aplicación. Esto incluye, pero no se limita a:\n- Daños por pérdida de beneficios, datos o uso.\n- Lesiones personales o daños materiales derivados del uso de la Aplicación.\n- Decisiones tomadas por los usuarios basadas en la información proporcionada por la Aplicación.\n\n6. Modificaciones de los Términos\nNos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en la Aplicación. Su uso continuado de PONOS constituirá su aceptación de los términos modificados.\n\n7. Terminación\nNos reservamos el derecho de suspender o terminar su acceso a la Aplicación en cualquier momento, sin previo aviso, por cualquier motivo, incluyendo, pero no limitado a, el incumplimiento de estos Términos y Condiciones.\n\n8. Ley Aplicable\nEstos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes del [País/Estado]. Cualquier disputa relacionada con estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de [Ciudad/País].\n\n9. Contacto\nSi tiene alguna pregunta sobre estos Términos y Condiciones o sobre el uso de PONOS, por favor contáctenos en:\nCorreo electrónico: [correo electrónico de contacto]\nSitio web: [URL del sitio web de PONOS]\n\n10. Aceptación Final\nAl utilizar PONOS, usted reconoce haber leído, entendido y aceptado estos Términos y Condiciones en su totalidad. Si no está de acuerdo con alguno de estos términos, debe dejar de utilizar la Aplicación de inmediato."
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar"
+            android:enabled="true" />
+
+    </LinearLayout>
+</ScrollView>

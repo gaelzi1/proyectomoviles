@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -21,17 +22,18 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        // Inicializar Firebase Auth
+
         auth = FirebaseAuth.getInstance()
 
-        // Obtener referencias de los elementos UI
+
         emailEditText = findViewById(R.id.etEmail)
         passwordEditText = findViewById(R.id.etPassword)
         confirmPasswordEditText = findViewById(R.id.etConfirmPassword)
         registerButton = findViewById(R.id.btnRegister)
-        loginButton= findViewById(R.id.btnLogin)
+        loginButton = findViewById(R.id.btnLogin)
+        val tvTerms = findViewById<TextView>(R.id.tvTerms)
 
-        // Configurar el botón de registro
+
         registerButton.setOnClickListener {
             val email = emailEditText.text.toString()
             val password = passwordEditText.text.toString()
@@ -47,8 +49,15 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
             }
         }
-        loginButton.setOnClickListener{
+
+
+        loginButton.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
+        }
+
+
+        tvTerms.setOnClickListener {
+            startActivity(Intent(this, TermsActivity::class.java))
         }
     }
 
@@ -56,13 +65,9 @@ class RegisterActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Registro exitoso
                     Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
-                    // Redirigir a la pantalla principal o login
-                   startActivity(Intent(this, LoginActivity::class.java))
-                    // finish()
+                    startActivity(Intent(this, LoginActivity::class.java))
                 } else {
-                    // Error en el registro
                     Toast.makeText(this, "Error: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
             }
