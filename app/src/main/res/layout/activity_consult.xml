@@ -2,12 +2,12 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#222"
-    android:padding="16dp"
-    android:id="@+id/main">
+    android:padding="16dp">
 
     <!-- Logo -->
     <ImageView
@@ -35,75 +35,11 @@
         android:layout_weight="1">
 
         <LinearLayout
+            android:id="@+id/layoutConsultas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <!-- Sección: Esta semana -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/this_week"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:paddingTop="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/violation_speed"
-                android:textColor="#B6A57B"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/date_time"
-                android:textColor="#AAAAAA"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/violation_light"
-                android:textColor="#B6A57B"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/date_time"
-                android:textColor="#AAAAAA"
-                android:textSize="12sp"/>
-
-            <!-- Sección: Este mes -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/this_month"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:paddingTop="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/violation_speed"
-                android:textColor="#B6A57B"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/date_time"
-                android:textColor="#AAAAAA"
-                android:textSize="12sp"/>
-
-            <!-- Sección: Mes pasado -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/last_month"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:paddingTop="16dp"/>
+            <!-- Aquí se agregarán dinámicamente las consultas -->
         </LinearLayout>
     </ScrollView>
 
@@ -118,24 +54,29 @@
         android:layout_marginTop="8dp">
 
         <EditText
+            android:id="@+id/editTextConsulta"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="@string/search_hint"
             android:padding="10dp"
             android:background="@android:color/darker_gray"
-            android:textColorHint="#CCCCCC"/>
+            android:textColorHint="#CCCCCC"
+            android:textColor="#FFFFFF"/>
 
         <ImageView
+            android:id="@+id/iconoLupa"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@android:drawable/ic_menu_search"
             app:tint="#B6A57B"
-            android:contentDescription="@string/search_icon"/>
+            android:contentDescription="@string/search_icon"
+            android:layout_marginStart="8dp"/>
     </LinearLayout>
 
     <!-- Icono de usuario -->
     <ImageView
+        android:id="@+id/user_icon"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_gravity="center"
@@ -143,5 +84,4 @@
         app:tint="#B6A57B"
         android:contentDescription="@string/user_icon"
         android:layout_marginTop="8dp"/>
-
 </LinearLayout>
