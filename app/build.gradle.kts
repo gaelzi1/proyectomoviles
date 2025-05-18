@@ -39,10 +39,15 @@ android {
 }
 
 dependencies {
+    // retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+// google
     implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
     implementation(libs.androidx.core.ktx)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.firestore)
+
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
