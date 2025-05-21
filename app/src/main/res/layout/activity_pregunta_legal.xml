@@ -1,34 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#2C2A25">
+
+    <!-- Contenido principal -->
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/contenidoPrincipal"
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="24dp">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="24dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <EditText
             android:id="@+id/etPregunta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Escribe tu pregunta legal"
-            android:inputType="text" />
+            android:background="@drawable/edittext_background"
+            android:textColor="#000000"
+            android:hintTextColor="#888888"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/btnEnviarPregunta"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Preguntar"
-            android:layout_marginTop="12dp" />
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="24dp" />
 
         <TextView
             android:id="@+id/tvRespuesta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Aquí se mostrará la respuesta"
-            android:layout_marginTop="20dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
     </LinearLayout>
 
+
+    <ImageButton
+        android:id="@+id/btnPerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_usuario"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:contentDescription="Perfil"
+        android:padding="4dp"
+        android:layout_margin="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

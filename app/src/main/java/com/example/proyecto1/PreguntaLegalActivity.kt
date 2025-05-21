@@ -1,6 +1,6 @@
 package com.example.proyecto1
 
-
+import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +17,7 @@ class PreguntaLegalActivity : AppCompatActivity() {
         val etPregunta = findViewById<EditText>(R.id.etPregunta)
         val btnEnviar = findViewById<Button>(R.id.btnEnviarPregunta)
         val tvRespuesta = findViewById<TextView>(R.id.tvRespuesta)
+        val btnPerfil = findViewById<ImageButton>(R.id.btnPerfil)
 
         btnEnviar.setOnClickListener {
             val textoPregunta = etPregunta.text.toString()
@@ -40,6 +41,12 @@ class PreguntaLegalActivity : AppCompatActivity() {
             } else {
                 tvRespuesta.text = "Escribe una pregunta primero."
             }
+        }
+
+        // Aquí activas el botón para ir al perfil
+        btnPerfil.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
     }
 }
