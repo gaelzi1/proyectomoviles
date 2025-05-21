@@ -71,4 +71,22 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir al Perfil"
+        android:textColor="#FFFFFF"
+        android:background="#C0B283"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnPreguntaLegal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Haz una pregunta legal"
+        android:layout_marginTop="16dp" />
+
+
+
 </LinearLayout>

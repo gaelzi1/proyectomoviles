@@ -1,4 +1,6 @@
 package com.example.proyecto1
 
-class activity {
-}
+data class Consult(
+    val texto: String = "",
+    val fecha: Long = System.currentTimeMillis()
+)
