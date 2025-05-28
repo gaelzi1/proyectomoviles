@@ -48,13 +48,13 @@ class ProfileActivity : AppCompatActivity() {
         firestore.collection("usuarios").document(userId).get()
             .addOnSuccessListener { document ->
                 if (document.exists()) {
-                    tvNombre.text = document.getString("nombre")
-                    tvApellidos.text = document.getString("apellidos")
-                    tvEmail.text = document.getString("email")
-                    tvTelefono.text = document.getString("telefono")
-                    tvGenero.text = document.getString("genero")
-                    tvEstado.text = document.getString("estado")
-                    tvFechaNacimiento.text = document.getString("fechaNacimiento")
+                    tvNombre.text = "Nombre: ${document.getString("nombre")}"
+                    tvApellidos.text = "Apellidos: ${document.getString("apellidos")}"
+                    tvEmail.text = "Email: ${document.getString("email")}"
+                    tvTelefono.text = "Teléfono: ${document.getString("telefono")}"
+                    tvGenero.text = "Género: ${document.getString("genero")}"
+                    tvEstado.text = "Estado: ${document.getString("estado")}"
+                    tvFechaNacimiento.text = "Nacimiento: ${document.getString("fechaNacimiento")}"
                 } else {
                     Toast.makeText(this, "No se encontraron datos del usuario", Toast.LENGTH_SHORT).show()
                 }
